@@ -1,6 +1,6 @@
 # Discord Cloner
 
-เครื่องมือโคลนเซิร์ฟเวอร์ Discord แบบครบจบในไฟล์เดียว — ดูด **Role / Category / Channel / Permissions / ข้อความ / ไฟล์-รูปภาพ / Embed / Reaction / Emoji / Thread** จากเซิร์ฟเวอร์ต้นทาง ไปสร้างใหม่ในเซิร์ฟเวอร์ปลายทาง
+เครื่องมือโคลนเซิร์ฟเวอร์ Discord แบบครบจบในไฟล์เดียว — ดูด **Role / Category / Channel / Permissions** จากเซิร์ฟเวอร์ต้นทาง ไปสร้างใหม่ในเซิร์ฟเวอร์ปลายทาง
 
 > **คำเตือน:** เครื่องมือนี้ใช้งานผ่าน Discord API โดยตรง การใช้ **User Token (self-bot)** ผิดข้อกำหนดของ Discord (ToS) และมีความเสี่ยงถูกแบนบัญชี โปรดใช้วิจารณญาณ — ผู้ใช้รับผิดชอบการใช้งานเองทั้งหมด ใช้ได้เฉพาะกับเซิร์ฟเวอร์ที่คุณมีสิทธิ์เท่านั้น
 
@@ -33,13 +33,10 @@ pip3 install requests --break-system-packages
 
 ```bash
 # 1) ดูรายชื่อช่องทั้งหมดของเซิร์ฟเวอร์ต้นทาง (✓ = ช่องที่จะถูกก็อป)
-python3 cloner.py list
-
-# 2) (แนะนำ) สำรองข้อความทั้งหมดเป็น JSONL ก่อน
-python3 cloner.py export
+python3 discord.py list
 
 # 3) ก็อปเต็มรูปแบบ
-python3 cloner.py
+python3 discord.py
 ```
 
 ### การหา ID / Token
